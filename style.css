@@ -1,0 +1,114 @@
+/* Body & Container */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    margin: 0;
+    padding: 20px;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .container {
+    background: #ffffffcc; /* semi-transparent white */
+    max-width: 900px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Heading */
+  h1 {
+    color: #0d47a1;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+  }
+  
+  /* Sector Buttons */
+  .button-group button {
+    padding: 15px 30px;
+    margin: 10px;
+    background: linear-gradient(45deg, #2196F3, #21CBF3);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(33, 203, 243, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .button-group button:hover {
+    background: linear-gradient(45deg, #21CBF3, #2196F3);
+    box-shadow: 0 12px 20px rgba(33, 203, 243, 0.5);
+    transform: translateY(-3px);
+  }
+  
+  /* Job Sections */
+  .job-section {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  /* Job Cards */
+  .job-card {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    margin: 15px auto;
+    padding: 20px 25px;
+    max-width: 600px;
+    border-left: 8px solid #2196F3;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    font-weight: 600;
+    color: #0d47a1;
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.1);
+  }
+  
+  .job-card:hover {
+    background: linear-gradient(135deg, #bbdefb, #e3f2fd);
+    box-shadow: 0 8px 20px rgba(33, 150, 243, 0.3);
+    transform: translateY(-4px);
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #064273;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    user-select: text;
+  }
+  
+  /* Return Button */
+  .return-button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #ff5252, #ff1744);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(255, 23, 68, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .return-button:hover {
+    background: linear-gradient(45deg, #ff1744, #ff5252);
+    box-shadow: 0 12px 25px rgba(255, 23, 68, 0.6);
+    transform: translateY(-3px);
+  }
+  

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>A Simple Job Portal</h1>
+
+    <!-- Sector Buttons -->
+    <div id="sector-buttons" class="button-group">
+      <button onclick="showJobs('it')">IT</button>
+      <button onclick="showJobs('healthcare')">Healthcare</button>
+      <button onclick="showJobs('education')">Education</button>
+    </div>
+
+    <!-- IT Jobs -->
+    <div id="it" class="job-section">
+      <h2>IT Jobs</h2>
+      <div class="job-card" onclick="toggleContact(this)">Frontend Developer - TechCorp
+        <div class="contact-info">📞 9876543210 | 📧 frontend@techcorp.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Backend Developer - CodeWorks
+        <div class="contact-info">📞 9123456780 | 📧 backend@codeworks.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">UI/UX Designer - PixelNest
+        <div class="contact-info">📞 9832012345 | 📧 design@pixelnest.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Mobile App Developer - Appify
+        <div class="contact-info">📞 9098765432 | 📧 mobile@appify.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Cloud Engineer - CloudNet
+        <div class="contact-info">📞 9001234567 | 📧 cloud@cloudnet.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">QA Tester - BugFixers
+        <div class="contact-info">📞 9888777666 | 📧 qa@bugfixers.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">DevOps Engineer - StreamlineTech
+        <div class="contact-info">📞 9977885566 | 📧 devops@streamline.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Data Scientist - DataSphere
+        <div class="contact-info">📞 9666442211 | 📧 data@datasphere.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Full Stack Developer - BuildStack
+        <div class="contact-info">📞 9234567890 | 📧 fullstack@buildstack.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">AI Engineer - DeepAI
+        <div class="contact-info">📞 9811223344 | 📧 ai@deepai.com</div>
+      </div>
+
+      <button class="return-button" onclick="returnToSectors()">← Return to Sectors</button>
+    </div>
+
+    <!-- Healthcare Jobs -->
+    <div id="healthcare" class="job-section">
+      <h2>Healthcare Jobs</h2>
+      <div class="job-card" onclick="toggleContact(this)">Registered Nurse - CarePlus
+        <div class="contact-info">📞 8000000011 | 📧 nurse@careplus.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Physician - LifeMed
+        <div class="contact-info">📞 8000000022 | 📧 doc@lifemed.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Lab Technician - BioLabs
+        <div class="contact-info">📞 8000000033 | 📧 lab@biolabs.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Pharmacist - MedZone
+        <div class="contact-info">📞 8000000044 | 📧 meds@medzone.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Radiologist - ScanCare
+        <div class="contact-info">📞 8000000055 | 📧 scan@scancare.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Surgeon - Elite Hospitals
+        <div class="contact-info">📞 8000000066 | 📧 surgery@elite.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Dentist - SmileCare
+        <div class="contact-info">📞 8000000077 | 📧 teeth@smilecare.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Healthcare Assistant - HospAssist
+        <div class="contact-info">📞 8000000088 | 📧 assist@hospassist.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Nutritionist - Wellness First
+        <div class="contact-info">📞 8000000099 | 📧 diet@wellness.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Paramedic - RapidAid
+        <div class="contact-info">📞 8000000100 | 📧 help@rapidaid.com</div>
+      </div>
+
+      <button class="return-button" onclick="returnToSectors()">← Return to Sectors</button>
+    </div>
+
+    <!-- Education Jobs -->
+    <div id="education" class="job-section">
+      <h2>Education Jobs</h2>
+      <div class="job-card" onclick="toggleContact(this)">Math Teacher - City School
+        <div class="contact-info">📞 8888000011 | 📧 math@cityschool.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Science Lecturer - State College
+        <div class="contact-info">📞 8888000022 | 📧 science@statecollege.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Principal - National School
+        <div class="contact-info">📞 8888000033 | 📧 principal@nationalschool.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">History Teacher - Heritage School
+        <div class="contact-info">📞 8888000044 | 📧 history@heritage.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">English Professor - UniEdu
+        <div class="contact-info">📞 8888000055 | 📧 english@uniedu.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Computer Instructor - LearnTech
+        <div class="contact-info">📞 8888000066 | 📧 tech@learntech.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Counselor - WellMind
+        <div class="contact-info">📞 8888000077 | 📧 mind@wellmind.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Special Education Teacher - Bright Minds
+        <div class="contact-info">📞 8888000088 | 📧 special@brightminds.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Sports Coach - FitSchool
+        <div class="contact-info">📞 8888000099 | 📧 coach@fitschool.com</div>
+      </div>
+      <div class="job-card" onclick="toggleContact(this)">Librarian - EduLibrary
+        <div class="contact-info">📞 8888000100 | 📧 lib@edulibrary.com</div>
+      </div>
+
+      <button class="return-button" onclick="returnToSectors()">← Return to Sectors</button>
+    </div>
+  </div>
+
+  <script>
+    function showJobs(sectorId) {
+      document.getElementById('sector-buttons').style.display = 'none';
+      document.querySelectorAll('.job-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectorId).style.display = 'block';
+    }
+
+    function returnToSectors() {
+      document.getElementById('sector-buttons').style.display = 'block';
+      document.querySelectorAll('.job-section').forEach(section => {
+        section.style.display = 'none';
+      });
+    }
+
+    function toggleContact(card) {
+      const info = card.querySelector('.contact-info');
+      if (info.style.display === 'block') {
+        info.style.display = 'none';
+      } else {
+        info.style.display = 'block';
+      }
+    }
+
+    window.onload = () => {
+      returnToSectors();
+    };
+  </script>
+</body>
+</html>
